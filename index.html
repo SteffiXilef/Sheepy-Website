@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="http://stevejamesofficial.com/onesheet/assets/images/mrsuicidesheep.png">
+		<meta name="description" content="Beschreibungstext">
+		<meta name="keywords" content="Suchbegriffe für Suchmaschinen">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Taviraj|Londrina+Shadow|Alegreya|Cabin+Sketch" rel="stylesheet"> 
+		<title>
+			Mr Suicide Sheep
+		</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<style type="text/css">
+		
+		/*Sollte besser nicht verändert werden */
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing:border-box;
+          }
+		  
+		body {
+		/*Hier kann mann das Hintergundbild verändern und anpassen*/
+		background-color: #021B22;
+		background-repeat: repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+		
+		
+		/* Die Sidebar kann hier formatiert werden: Position und Gestaltung*/
+		.sidebar {
+		float:left;
+		background: rgba(201,116,85, 0.7);
+		margin-top: 30px;
+		border-radius: 0 15px 15px 0;
+		padding:7px;
+		text-align:center;
+		border: 2px solid rgba(0,0,0, 0.5) ; 
+		position:static;
+		}
+		
+		
+		/*Falls Text in die sidebar eingefügt wird kann der hier formatiert werden*/
+		.sidebar_text {
+		font-size: 20px;
+		margin-bottom:5px;
+		font-family: 'Cabin Sketch', cursive;
+		}
+		
+		/* Der Pfeil um an den Anfang der Seite zu gelangen kann angepasst werden: Ausrichtung, Aussehen der Border ect.*/
+		.sidebar_rechts {
+		float:right;
+		opacity:0.6;
+		position:fixed;
+		margin-left:86%;
+		margin-top: 550px;
+		border: 3px dashed black;
+		border-radius: 13px 13px 13px 13px;
+		padding-top:5px;
+		}
+		
+		
+		/* Das Fenster des Hauptinhalts wird hier formatiert */
+		.allum { 
+		width: 70%; 
+		margin: 0 auto;
+		}
+		
+		
+		/* Hier kann das Header Bild angepasst werden*/
+		.header { 
+		background:black;
+		text-align:center;
+		background-image: url('https://va.sndcdn.com/bg/soundcloud:sounds:196519948/Subtact-visual-track.jpg');
+		height:400px
+		}
+		
+		/* Hier wird der Text des Header formatiert*/
+		.header_text {
+		-webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+		font-size:65px;
+		padding-top: 40px;
+		padding-right:120px;
+		font-family: 'Londrina Shadow', cursive;
+		}
+		
+		.header_text_unter {
+		-webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+		font-size:30px;
+		padding-top: -10px;
+		padding-right:120px;
+		font-family: 'Cabin Sketch', cursive;
+		line-height:3px;
+		}
+		
+		/* Hier wird der Bereich fomatiert in dem die Beiträge und Infomationen stehen */
+		.inhalt {
+		background: linear-gradient(to bottom,#021B22,#00303E,#225556,#0E5E5D,#B8B69D,#E3C28F,#E89A69,#ab6953);
+		border-right:3px solid black; 
+		border-left: 3px solid black;
+		width:100%;
+		padding-top:20px;
+		}
+		
+		/* Anfang des Klappmenüs*/
+		
+		.menue {
+		background: black;
+		height:40px;
+		opacity: 0.97;
+		}
+		.menue ul {
+		list-style-type:none; padding: 0; margin:0; display:inline-block;
+		}
+		
+		.menue ul li {
+                font-size:20px;
+				background:black;
+				padding: 5px; float:left;
+				line-height:29px;
+				width:150px;
+				position:relative;
+				border-right: 1px solid #ab6953;
+            }
+			
+		.menue ul li a {
+		text-decoration:none; text-transform: uppercase; color:#ab6953; font-family: 'Londrina Shadow', cursive; text-align:center;
+		}
+		.menue ul li:hover {
+		background:black;
+		}
+		
+		.menue ul li a:hover {color:#E89A69;
+		}
+		.menue ul ul {
+		position:absolute; top:40px; left:0px; padding:0; margin:0; display:none;
+		}
+		
+		.menue ul ul li {
+		float:none;border-top:green; 
+		}
+		
+		.menue ul ul li a {
+		text-decoration:none; text-transform: uppercase; color:#ab6953; font-family: 'Londrina Shadow', cursive; front-size:15px;
+		}
+		
+		.menue ul li:hover ul {
+		display:block;
+		}
+		
+		/*Ende des Klappmenüs*/
+		
+		.clear {
+		clear:both;
+		}
+		.footer {
+		text-align:center;
+		background: black;
+		padding:20px;
+		color:#225556;
+		border-radius: 0 0 30% 30%;
+		width:100%;
+		}
+		.footer a {
+		text-decoration:none;
+		color: #225556
+		}
+		
+		/* Größe der Social Media Icons kann hier angepasst werden*/
+		.icon {
+		width:30px; height:30px;
+		}
+		
+		   /* Hier ist der Ausgangscontainer in dem sich das Startbild befindet */
+			.sheepystart {
+			margin-left:57px;
+		    margin-top:20px;
+		    border: 8px solid #597B7C; 
+			float:left;
+			width:166px;
+			height:166px;
+			background:url(http://files.homepagemodules.de/b759391/a_75_655552a3.jpg);
+			}
+			
+            /* Hier ist der zweite Container in dem sich das Bild befindet was beim Hovern angezeigt werden soll. Opacity ist hier auf 0 gesetzt
+            damit der Container beim starten zunächst unsichtbar ist. */
+			.sheepyneu {
+			background:url(http://files.homepagemodules.de/b759391/a_74_549e2969.jpg);
+			width:150px;
+			height:150px;
+			opacity:0;
+			transition:1.6s all ease-in-out;
+			-moz-transition:1.6s all ease-in-out;
+			-webkit-transition:1.6s all ease-in-out;
+			-ms-transition:1.6s all ease-in-out;
+			-o-transition:1.6s all ease-in-out;
+			}
+			
+            /* Hier wird nun die Opacity auf 1 gestellt, damit das Hintergrundbild von Container .sheepyneu angezeigt wird beim hovern des
+            Containers sheepystart. */
+			.sheepystart:hover .sheepyneu {
+			opacity:1;
+			}
+		
+		
+		/* Überschrifft des Beitrags kann hier Fomatiert werden*/
+		.name {
+		margin:12px;
+		font-size:33px;
+		font-family: 'Londrina Shadow', cursive;
+		border: 5px solid #597B7C;
+		text-align:center;
+		background:#917E6D;
+		float: right;
+		width:65%;
+		margin-right:50px;
+		}
+		
+		/* Hier wird der Inhalt-Text des Beitrags formatiert */
+		.good_stuff {
+		margin:12px;
+		font-size:20px;
+		border: 5px solid #597B7C;
+		text-align:justify;
+		background:#917E6D;
+		float: right;
+		width:65%;
+		margin-right:50px;
+		height: 87%;
+		padding:15px;
+		font-family: 'Alegreya Sans', sans-serif;
+		}
+		
+		
+		/* Hier kann man die kleine Infobox formatieren die unter dem Bild steht*/
+		.info {
+		margin:12px;
+		font-size:17px;
+		border: 5px solid #597B7C;
+		background:#917E6D;
+		float: left;
+		width:22%;
+		height: 15%;
+		padding:10px;
+		margin-left:35px;
+		font-size:15px;
+		text-align:center, justify;
+		}
+		
+		/* Das Video kann hier anders positioniert werden*/
+		.video {
+		margin: 30px;
+		text-align:center;
+		}
+		
+		/* Formatierung des Zitat-Textes kann hier verändert werden*/
+		.qoute {
+		text-align:center;
+		font-family: 'Alegreya', serif;
+		padding:30px;
+		font-size:17px;
+		}
+		
+		
+		/* Eine Überschrift im Beitrag kann verändert werden*/
+		.ueber {
+		font-size:20px;
+		text-align:center;
+		text-decoration:overline;
+		}
+		
+		/* Geheim höhö*/
+		.nala_groß {
+		float:right;
+		margin-right: 5px;
+		margin-top: 35px;
+		}
+		
+		.nala1 {
+		border-radius: 100%;
+		background-image: url('http://files.homepagemodules.de/b759391/a_78_9f30ea2d.gif');
+		height:80px;
+		width: 80px;
+		background-size:contain;
+		margin-bottom:2px;
+		transition:1.6s all ease-in-out;
+			-moz-transition:1.6s all ease-in-out;
+			-webkit-transition:1.6s all ease-in-out;
+			-ms-transition:1.6s all ease-in-out;
+			-o-transition:1.6s all ease-in-out;
+		opacity:0.02;
+		}
+		
+		.nala1:hover {
+		opacity:0.9;
+		}
+		
+		.nala2 {
+		border-radius: 100%;
+		background-image: url('http://files.homepagemodules.de/b759391/a_79_559287e7.gif');
+		height:80px;
+		width: 80px;
+		background-size:contain;
+		margin-bottom:2px;
+		transition:1.6s all ease-in-out;
+			-moz-transition:1.6s all ease-in-out;
+			-webkit-transition:1.6s all ease-in-out;
+			-ms-transition:1.6s all ease-in-out;
+			-o-transition:1.6s all ease-in-out;
+			opacity:0.02;
+		}
+		
+		.nala2:hover {
+		opacity:0.9;
+		}
+		
+		.nala3{
+		border-radius: 100%;
+		background-image: url('http://files.homepagemodules.de/b759391/a_80_474a9619.gif');
+		height:80px;
+		width: 80px;
+		background-size:contain;
+		transition:1.6s all ease-in-out;
+			-moz-transition:1.6s all ease-in-out;
+			-webkit-transition:1.6s all ease-in-out;
+			-ms-transition:1.6s all ease-in-out;
+			-o-transition:1.6s all ease-in-out;
+		opacity:0.02;
+		}
+		
+		.nala3:hover {
+		opacity:0.9;
+		}
+		</style>
+	</head>
+	<body>
+    <!-- Hier beginnt die Sidebar links-->
+	    <div class="sidebar"> 
+		<div class="sidebar_text">
+		</div>
+	
+	
+	<!--Social Media Icons -->
+		
+		<a href="#"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/twitter-128.png" alt="Bild" /></a>
+		<p></p>
+		<a href="#"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/facebook-128.png" alt="Bild" /></a>
+		<p></p>
+		<a href="#"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/instagram-128.png" alt="Bild" /></a>
+		<p></p>
+		<a href="#"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/tumblr-128.png" alt="Bild" /></a>
+		<p></p>
+		<a href="#"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/pinterest-128.png" alt="Bild" /></a>
+		</div>
+		
+	<!-- Hier Endet die Sidebar links-->	
+	
+	<!-- Beginn Sidebar links -->
+		<div class="sidebar_rechts">
+		<a href="#"><img src="http://files.homepagemodules.de/b759391/a_77_f393b005.png" alt="Pfeil" width="30" height="30"/></a>
+		</div>
+	<!-- Ende Sidebar rechts -->
+	
+	<!-- Beginn des Hauptinhaltes -->
+	    <div class="allum">
+		<!-- Beginn Headerbereich -->
+		<div class="header">
+		
+		<div class="header_text">Five Nights at YouTube
+		</div>
+	    <div class="header_text_unter">There's so much to discover
+		</div>
+		
+		<div class="nala_groß">
+		<div class="nala1"></div>
+		<div class="nala2"></div>
+		<div class="nala3"></div>
+		</div>
+		<div class="clear"></div>
+		</div>
+		<!-- Ende Headerbereich -->
+		
+		<!-- Anfang Klappmenü -->
+		<div class="menue">
+		<ul>
+            <li><a href="#">Startseite</a>
+			<ul>
+            <li><a href="#">Portal</a></li>
+            <li><a href="#">Regeln</a></li>
+            </ul>
+			</li>
+			<li><a href="#">News</a></li>
+            <li><a href="#">Das Team</a></li>
+            </ul>
+		</div>
+		
+		<!-- Ende Klappmenü -->
+		
+		<!-- Beginn des Informativeninhalts -->
+		<div class="inhalt">
+		
+		<!-- Bild zum Hovern/ Je nach inhalt austauschbar -->
+		<div class="sheepystart">
+			<div class="sheepyneu">
+			</div>
+		</div>
+		<div class="name">
+		MrSuicideSheep
+		</div>
+		<div class="good_stuff">
+		<div class="qoute">"Real music will always convey incredible emotions; Love, dreams, passion, nostalgia or sadness. Real music has the power to reflect moments of our life and make us strive to seek for something higher. Take the time to sit down, fill your world with music, look at the stars and say goodbye to the sun that goes to sleep... You will be truly at peace." 
+		<br>-MrSuicideSheep
+		</div>
+		</div>
+		<!-- Beginn der linken Info_box -->
+		<div class="info">
+		Good to Know...
+		<p></p>
+		▸ RealName: Unknown
+		<p></p>
+		▸ Job: YouTuber
+		<p></p>
+		▸ 22 years old
+		<p></p>
+		▸ born in Austria
+		<p></p>
+		</div>
+		<!-- Ende der linken Infobox -->
+		
+		<!-- beginn des ersten Beitrags -->
+		<div class="good_stuff">
+		<div class="ueber">Who is MrSuicideSheep?</div>
+		<br>
+        MrSuicideSheep one of the best parts of YouTube. One of the purely music-based channels, track after track shows up and it is always quality. Whether it’s electro, drum & bass, dubstep, ambient/chillout, experimental, indie rock and even progressive house, it’s good. The gorgeous art used in backgrounds adds to the presentation as well. Really cool person, with a great story & they deserve all the success. Mixes get added from time to time, like the chill-out one I’ve linked below. 
+		<div class="video">
+		<iframe width="450" height="253" src="https://www.youtube.com/embed/Ta-va7qfhnE" frameborder="0" allowfullscreen></iframe>
+		</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<!-- Beginn des zweiten Beitrags -->
+		<div class="good_stuff">
+		<div class="ueber">
+		<p>Why did he choose that name?</p><br>
+		</div>
+		
+		<div class="qoute"><p>"I got the name from the PC game Worms. I used to play it a lot as a kid. One of the weapons you could use was a sheep that blew up. I made up the name SuicideSheep and stuck with it ever since."</p> 
+		<br></div>
+		<p>"Ich habe den Namen von dem PC- Spiel 'Worms'. Dieses habe ich früher als Kind oft gespielt. Eine der Waffen, die man benutzen konnte, war ein Schaf das sich in die Luft sprengt. Ich erfand den Namen SuicideSheep und bin diesem seither treu geblieben."</p>
+		</div>
+		
+		
+		<div class="clear"></div>
+		</div>
+		
+		
+		<!-- Beginn des Footers -->
+		<div class="footer"><a href="#">About</a> |
+		<a href="#">Resources</a> |
+		<a href="#">FAQ</a>
+		</div>
+		<!-- Ende des Footers -->
+		</div>
+		<!-- Ende Hauptinhalt --> 
+		
+</body>
+
+</html>
